@@ -10,11 +10,6 @@ $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
 $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
 $comments = filter_var($_POST['comments'], FILTER_SANITIZE_STRING);
 
-// if(empty($name)){
-
-  // header("location: Discussion.html?nouser");
-  // exit();
-// }
 
 if(empty($email)){
 
@@ -33,7 +28,7 @@ if(empty($_POST['protect'])){
 
 $mail = new PHPMailer(true);
 try {
-    //Server settings
+
     $mail->SMTPDebug = 2;
     $mail->isSMTP();
     $mail->Host = 'mail.smtp2go.com';
@@ -43,18 +38,17 @@ try {
     $mail->SMTPSecure = 'tls';
     $mail->Port = "2525";
 
-    // Sender
+
     $mail->setFrom($email,$name);
-    //Recipients
-    $mail->addAddress('bestofblueproject@hotmail.com');     // Add a recipient
 
-    // Body Content
 
-    //Content
+    $mail->addAddress('bestofblueproject@hotmail.com');
+
     $mail->isHTML(true);
     $mail->Subject = 'Feedback from ' . $name;
     $mail->Body    = $comments;
     $mail->AltBody = strip_tags($comments);
+
 
     $mail->send();
 
