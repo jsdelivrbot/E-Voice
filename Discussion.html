@@ -1,0 +1,81 @@
+<!Doctype HTML>
+<head>
+  <title> Talk about it! </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="BestBuyLogo">
+      <img src="Logo.png" alt="BestBuy Logo">
+    </div>
+
+    <div id="HomeButton">
+      <a href="index.html">Home</a>
+    </div>
+
+    <div id="DisscusionButton">
+      <a href="Discussion.html">Discuss</a>
+    </div>
+
+    <div id="FeedbackButton">
+      <a href="Feedback.html">Feedback</a>
+    </div>
+  </header>
+
+  <div id="Title02">
+    <h3> What are YOUR thoughts?</h3>
+  </div>
+
+  <div id="Paragraph02">
+    <p>
+      See an area of our store struggling or have an idea to improve on something? Dont wait for e-voice. Speak your mind whenever and however you'd like!
+    </p>
+  </div>
+
+<div class="container">
+
+    <div class="col-lg-6 push-lg-3">
+
+        <form id="ContactUs" method="post" action="/Submission.php">
+
+            <input type="text" name="name" class="form-control" placeholder="Name">
+            <input type="email" name="email" class="form-control" placeholder="Email" required>
+            <textarea name="comments" class="form-control" placeholder="Comments" required></textarea>
+    <!-- <input type="submit" name="send" class="form-control" value="Send Message"> -->
+
+            <input type="hidden" name="protect">
+
+            <button type="submit" class="btn btn-success">Send!</button>
+
+
+          </form>
+
+        </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="./js/jquery.validate.min.js"></script>
+
+<script src="./js/tether.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script>
+$("#ContactUs").validate();
+</script>
+
+</body>
+
+<footer>
+  <div id="feedbackFooter">
+    <p>  Please enter your Best Buy email when using the appropiate form. <br>
+         All forms submitted will stay anonymous, this is a way to contact
+         you with updates on your questions, comments and concerns. </p>
+  </div>
+
+</footer>
