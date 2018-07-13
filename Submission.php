@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php'; 
+require 'vendor/autoload.php';
 
 
 
@@ -13,18 +13,17 @@ $comments = filter_var($_POST['comments'], FILTER_SANITIZE_STRING);
 
 if(empty($email)){
 
-  header("location: Discussion.html?nouser");
+  header("location: services.html?nouser");
   exit();
 }
 
 if(empty($comments)){
 
-  header("location: Discussion.html?nouser");
+  header("location: services.html?nouser");
   exit();
 }
 
-
-if(empty($_POST['protect'])){
+if(empty($_POST['email2'])) {
 
 $mail = new PHPMailer(true);
 try {
@@ -34,7 +33,7 @@ try {
     $mail->Host = 'mail.smtp2go.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'dsblade0@hotmail.com';
-    $mail->Password = '1403Stevens';
+    $mail->Password = 'Tayler19';
     $mail->SMTPSecure = 'tls';
     $mail->Port = "2525";
 
@@ -42,7 +41,7 @@ try {
     $mail->setFrom($email,$name);
 
 
-    $mail->addAddress('bestofblueproject@hotmail.com');
+    $mail->addAddress('dsblade0@hotmail.com');
 
     $mail->isHTML(true);
     $mail->Subject = 'Feedback from ' . $name;
@@ -56,4 +55,6 @@ try {
 
   } catch (Exception $e) {
     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-}}
+}
+
+}

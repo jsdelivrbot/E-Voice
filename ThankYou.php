@@ -1,48 +1,54 @@
-<!doctype Html>
-<head>
-  <title>Sent!</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet"  href="style.css">
-</head>
-<body>
+<!DOCTYPE html>
 
+  <head>
+    <meta= name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+    <meta name="keywords" content="web design, affordable web design, professional web design">
+    <meta name="author" content ="Austin Stevens">
+    <meta charset="utf-8">
+    <title>Best of Blue | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
     <header>
-      <div id="BestBuyLogo">
-        <img src="Logo.png" alt="BestBuy Logo">
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Best</span> of Blue</h1>
       </div>
-
-      <div id="HomeButton">
-        <a href="index.html">Home</a>
-      </div>
-
-      <div id="DisscusionButton">
-        <a href="Discussion.html">Discuss</a>
-      </div>
-
-      <div id="FeedbackButton">
-        <a href="Feedback.html">Feedback</a>
-      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a> </li>
+          <li><a href="about.html">About</a> </li>
+          <li><a href="services.html">Submission</a> </li>
+        </ul>
+      </nav>
     </header>
 
-<div id="ThankYou">
-  <h3>Thank you!</h3>
-    <p>Your info has been submitted. Thanks for your time and effort to make
-      our store the best it can be!</p>
-</div>
 
+    <section id="newsletter">
+      <div class="container">
+        <h1> Values | Expert Service | Peronsal Brand | Drives Results </h1>
+      </div>
+    </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="./js/jquery.validate.min.js"></script>
+    <div class="container">
+    <br>
+      <ul id="services">
+        <li>
+          <h3>You did it!</h3>
+          <p> Thank you for your participation.</p>
+            <p class ="dark"> "With the new day comes new strength and new thoughts" </p>
+            <h3> Eleanor Roosevelt <h3>
+           </li>
+         </ul>
+        </div>
+      </div>
 
-<script src="./js/tether.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-
-<div id="gif">
-  <img src="https://media0.giphy.com/media/O5NQWAFrDwIZW/giphy.gif"/>
-</div>
-
-</body>
+  <div class="footer">
+    <footer>
+      <p>Austin Stevens Web Design, Copyright &copy; 2018</p>
+    </footer>
+  </div>
+  </body>
+</html>
