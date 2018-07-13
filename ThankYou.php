@@ -20,7 +20,7 @@
         <ul>
           <li><a href="index.html">Home</a> </li>
           <li><a href="about.html">About</a> </li>
-          <li><a href="services.html">Submission</a> </li>
+          <li><a href="services.html">Submit</a> </li>
         </ul>
       </nav>
     </header>
